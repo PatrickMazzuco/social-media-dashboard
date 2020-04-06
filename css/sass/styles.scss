@@ -47,12 +47,11 @@ body {
 
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
 }
 
 .container {
-  margin: 30px;
+  margin: 45px 10% 5% 10%;
 }
 
 header {
@@ -243,6 +242,19 @@ a {
   color: $gray-blue-txt;
 }
 
+.bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  height: 250px;
+  width: 100%;
+
+  background: $pale-blue-bg-top;
+  border-radius: 0 0 5px 5px;
+}
+
 @media (max-width: 890px) {
   .card {
     flex: 1 0 34%;
@@ -270,6 +282,10 @@ a {
 @media (max-width: 480px) {
   .card {
     flex: 1 0 51%;
+  }
+
+  .container {
+    margin-top: 20px;
   }
 }
 
@@ -312,5 +328,9 @@ body.theme-dark {
     .theme-toggle {
       border-top: 1px solid $desaturated-blue-txt;
     }
+  }
+
+  .bg-box {
+    background: $dark-blue-bg-top;
   }
 }

@@ -15,12 +15,11 @@ body {
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
 }
 
 .container {
-  margin: 30px;
+  margin: 45px 10% 5% 10%;
 }
 
 header {
@@ -189,6 +188,17 @@ a {
   color: #63687e;
 }
 
+.bg-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 250px;
+  width: 100%;
+  background: #f5f7ff;
+  border-radius: 0 0 5px 5px;
+}
+
 @media (max-width: 890px) {
   .card {
     flex: 1 0 34%;
@@ -213,6 +223,10 @@ a {
 @media (max-width: 480px) {
   .card {
     flex: 1 0 51%;
+  }
+
+  .container {
+    margin-top: 20px;
   }
 }
 body.theme-dark {
@@ -241,6 +255,9 @@ body.theme-dark a {
   body.theme-dark .theme-toggle {
     border-top: 1px solid #8b97c6;
   }
+}
+body.theme-dark .bg-box {
+  background: #1f212e;
 }
 
 /*# sourceMappingURL=styles.css.map */
