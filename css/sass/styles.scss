@@ -149,6 +149,12 @@ header {
   background: $gray-blue-card;
   margin: 15px;
   border-radius: 5px;
+  transition: filter 0.2s;
+}
+
+.card:hover {
+  filter: brightness(0.95);
+  cursor: pointer;
 }
 
 .card-content {
@@ -307,6 +313,10 @@ body.theme-dark {
 
   .card {
     background: $dark-desaturated-blue-card;
+  }
+
+  .card:hover {
+    filter: brightness(1.2);
   }
 
   .followers-section .cards {
